@@ -1,13 +1,14 @@
 <!-- Git flow:
  starting from terminal, when in git:(main), type:
  git checkout -b newBranchName
+ git add .
  git commit -m "commit message"
  git push --set-upstream origin newBranchName
  Then go to the GitHub repo and click: "compare & pull request", then "create pull request", then "merge pull request", then "confirm merge", then "delete branch"
- back in terminal type:
+ back in terminal, type:
  git checkout main
  git pull
- Can start a new branch straight away, or make changes and then create the branch as above just before adding, pushing, pulling, deleting the branch
+ Note: can start a new branch straight away, or make changes and then create the branch as above just before adding, pushing, pulling, deleting the branch
  -->
 
 # Reflections
@@ -32,7 +33,8 @@
 
 ## Screenshots
 
-<!-- Add screenshots of wireframe, componenet tree, planning etc. -->
+<!-- Add screenshots of wireframe, componenet tree, planning etc.
+ (screenshot component tree with inspect to get the dev tools "components" React specific dev tool)-->
 
 ## Resources
 
