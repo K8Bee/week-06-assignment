@@ -1,5 +1,7 @@
-//! Manny's code is all in App (here/below) BUT PLEASSSSSSSE use separate components (put themin the component folder in src folder)
+//! Manny's code is all in App.jsx file (here/below) BUT PLEASSSSSSSE use separate components (put them in the component folder in src folder) make a component tree
 import "./App.css";
+import ThumbnailContainer from "./components/ThumbnailContainer";
+import LargeImgContainer from "./components/LargeImgContainer";
 
 export default function App() {
   //todo:
@@ -23,39 +25,10 @@ export default function App() {
     <>
       <h1>My Gallery</h1>
       <main>
-        have diff containers inside main
-        <div>
-          This is the container for my thumbnail images (they all need to be in
-          a container) it can be at the top or bottom (maybe top for desktop,
-          bottom for mobile). Here I will render a list of my images and I wil
-          give each of them a key. (note the use of kewords here (see use in
-          demos))
-          <ul>
-            <li>Tools needed for this div to work:</li>
-            <li>need a method to render all images</li>
-            <li>
-              need an event to click on the images (as each image is to be
-              clickable), the event handler here will handle switching between
-              images (the handle Switch Image block of code - how to connect it
-              to the container)
-            </li>
-          </ul>
-        </div>
-        <div>
-          This is a container for my larger images. This second container needs
-          to be CONDITIONALLY RENDERED as it is only to exist whenever the user
-          clicks on one of the thumbnail images. It will depend on the clicking
-          of a thumbnail image i.e. if no images to render in my thumbnails,
-          then this container will not exist
-          <ul>
-            <li>Tools needed:</li>
-            <li>an element to contain the larger image</li>
-            <li>
-              need some conditional logic to render this element once the user
-              has clicked on the thumbnail
-            </li>
-          </ul>
-        </div>
+        {/* have diff containers inside main */}
+        <ThumbnailContainer />
+
+        <LargeImgContainer />
       </main>
     </>
   );
