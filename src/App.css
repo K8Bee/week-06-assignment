@@ -1,11 +1,27 @@
+@import "tailwindcss";
+
 :root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1280px;
-  background-color: #ffffcc;
+  /* max-width: 1280px; */
+  /* background-color: #ffffcc; */
   font-family: monospace;
 }
+
+:main {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+
+:thumbnailcontainer {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+}
+
+/* may be best to put media queries here in globals, but if there is a small thing could use tailwind media queries in and to target a particular element when a certain screen size is being used */
 
 /* #root {
   max-width: 1280px;
